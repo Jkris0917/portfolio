@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JK CodeCraft</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/browser@4.js"></script>
+</head>
+
+<body class="">
+    <div id="page-loader" class="fixed inset-0 z-50 flex items-center justify-center bg-white">
+        <div class="flex space-x-1 text-4xl font-bold text-blue-600">
+            <span class="dot">.</span>
+            <span class="dot">.</span>
+            <span class="dot">.</span>
+        </div>
+    </div>
+    <header class="fixed top-0 left-0 z-50 w-full bg-white shadow-md">
+        <div class="container flex items-center justify-between p-4 mx-auto ">
+            <a href="" class="flex items-center">
+                <img src="assets/logo/logo.png" alt="Logo" class="w-auto h-10" loading="lazy">
+                <span class="ml-2 text-xl font-bold text-gray-800">CodeCraft</span>
+            </a>
+            <nav class="hidden space-x-6 md:flex">
+                <a href="#hero" class="text-gray-600 nav-link hover:text-gray-900">Home</a>
+                <a href="#features" class="text-gray-600 nav-link hover:text-gray-900">Features</a>
+                <a href="#aboutus" class="text-gray-600 nav-link hover:text-gray-900">About Us</a>
+                <a href="#contactus" class="text-gray-600 nav-link hover:text-gray-900">Contact Us</a>
+                <a href="#faq" class="text-gray-600 nav-link hover:text-gray-900">FAQ</a>
+            </nav>
+
+            <button type="button" id="mobile-toggle"
+                class="text-gray-600 md:hidden hover:text-gray-900 focus:outline-none">
+                <p>&#9776;</p>
+            </button>
+
+
+        </div>
+        <div class="hidden px-4 pb-4 space-y-2 md:hidden" id="mobile-menu">
+            <a href="#hero" class="block text-gray-600 nav-link hover:text-gray-900">Home</a>
+            <a href="#features" class="block text-gray-600 nav-link hover:text-gray-900">Features</a>
+            <a href="#aboutus" class="block text-gray-600 nav-link hover:text-gray-900">About Us</a>
+            <a href="#contactus" class="block text-gray-600 nav-link hover:text-gray-900">Contact Us</a>
+            <a href="#faq" class="block text-gray-600 nav-link hover:text-gray-900">FAQ</a>
+        </div>
+
+    </header>
+
+
+    <section id="hero" class="py-20 bg-gray-100 dark:bg-gray-900">
+        <div class="container flex flex-col-reverse items-center justify-between px-4 mx-auto md:flex-row">
+            <div class="w-full space-y-6 text-center md:w-1/2 md:text-left fade-slide">
+                <h1 class="text-4xl font-extrabold leading-tight text-gray-900 md:text-5xl dark:text-white">
+                    Welcome to <span class="text-blue-600">CodeCraft</span>
+                </h1>
+                <p class="text-lg text-gray-700 dark:text-gray-300">Build powerful web experiences with modern tools and
+                    expert guidance.</p>
+                <div class="mt-6">
+                    <a href=""
+                        class="inline-block px-6 py-3 font-semibold text-white transition bg-blue-600 rounded-lg shadow hover:bg-blue-700">Get
+                        Started</a>
+                    <a href=""
+                        class="inline-block px-6 py-3 ml-4 text-gray-700 transition border border-gray-300 rounded-lg dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800">Learn
+                        More</a>
+                </div>
+            </div>
+            <div class="w-full mb-10 md:w-1/2 md:mb-0 fade-slide">
+                <img src="assets/logo/logo.png" alt="Hero Image" class="w-full shadow-xl rounded-xl" />
+            </div>
+
+        </div>
+    </section>
+
+    <section id="features" class="py-16 bg-white">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 fade-slide">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold text-gray-800">Our Features</h2>
+                <p class="mt-2 text-gray-600">Explore what we offer to make your experience better</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+
+                <div class="overflow-hidden bg-white border border-gray-200 shadow-md rounded-xl">
+                    <img src="assets/logo/logo.png" alt="Feature 1" class="object-cover w-full h-48">
+                    <div class="p-6">
+                        <h3 class="mb-2 text-xl font-semibold text-gray-800">Feature Title 1</h3>
+                        <p class="text-gray-600">Short description about this feature that highlights its value or
+                            purpose.</p>
+                    </div>
+                </div>
+
+
+                <div class="overflow-hidden bg-white border border-gray-200 shadow-md rounded-xl">
+                    <img src="assets/logo/logo.png" alt="Feature 2" class="object-cover w-full h-48">
+                    <div class="p-6">
+                        <h3 class="mb-2 text-xl font-semibold text-gray-800">Feature Title 2</h3>
+                        <p class="text-gray-600">This card explains another powerful feature with supporting detail and
+                            clarity.</p>
+                    </div>
+                </div>
+
+
+                <div class="overflow-hidden bg-white border border-gray-200 shadow-md rounded-xl">
+                    <img src="assets/logo/logo.png" alt="Feature 3" class="object-cover w-full h-48">
+                    <div class="p-6">
+                        <h3 class="mb-2 text-xl font-semibold text-gray-800">Feature Title 3</h3>
+                        <p class="text-gray-600">Highlight a feature that really sets your service apart from the rest.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="aboutus" class="px-4 py-16 bg-white sm:px-6 lg:px-8">
+        <div class="grid items-center grid-cols-1 gap-12 mx-auto max-w-7xl md:grid-cols-2">
+
+            <div>
+                <img src="assets/images/about-us.jpg" alt="About us image"
+                    class="w-full h-auto shadow-lg rounded-2xl" />
+            </div>
+
+            <div>
+                <h2 class="mb-4 text-3xl font-bold text-gray-900">About Us</h2>
+                <p class="mb-6 text-lg text-gray-600">
+                    At <span class="font-semibold text-gray-800">JK CodeCraft</span>, we are passionate about crafting
+                    modern, efficient, and beautiful web experiences. From front-end aesthetics to powerful backend
+                    solutions, we bring innovation to every project.
+                </p>
+                <p class="mb-6 text-gray-600">
+                    Our team is made up of skilled developers and designers committed to turning ideas into reality.
+                    With years of experience and a love for technology, we help businesses and individuals succeed
+                    online.
+                </p>
+                <a href="#contactus"
+                    class="inline-block px-6 py-3 text-white transition bg-blue-600 shadow rounded-xl hover:bg-blue-700">Contact
+                    Us</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contactus" class="px-4 py-16 bg-gray-100">
+        <div class="grid items-start max-w-6xl grid-cols-1 gap-12 mx-auto md:grid-cols-2">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold">Get in Touch</h2>
+                <p class="text-gray-600">Have questions or feedback? We'd love to hear from you. Reach out any time!</p>
+                <div class="space-y-1 text-gray-600">
+                    <p><strong>Email:</strong> gelladojohnkris@gmail.com</p>
+                    <p><strong>Phone:</strong> +63 (0997) 499-8157</p>
+                    <p><strong>Address:</strong> Sipalay City Negros Occidental</p>
+                </div>
+                <div class="flex pt-4 space-x-4">
+                    <a href="https://web.facebook.com/Jkris22/" class="text-gray-500 transition hover:text-blue-600">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.5l-.4 3h-2v7A10 10 0 0022 12z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-500 transition hover:text-pink-600">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7.5 2C4.5 2 2 4.5 2 7.5v9C2 19.5 4.5 22 7.5 22h9c3 0 5.5-2.5 5.5-5.5v-9C22 4.5 19.5 2 16.5 2h-9zm0 2h9c1.9 0 3.5 1.6 3.5 3.5v9c0 1.9-1.6 3.5-3.5 3.5h-9C5.6 20 4 18.4 4 16.5v-9C4 5.6 5.6 4 7.5 4zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.75a.75.75 0 100 1.5.75.75 0 000-1.5z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-500 transition hover:text-blue-400">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.4.36a9.32 9.32 0 01-2.88 1.1A4.52 4.52 0 0016.11 0c-2.6 0-4.71 2.13-4.71 4.76 0 .37.04.73.12 1.07A12.94 12.94 0 013 2.11a4.7 4.7 0 001.44 6.37 4.42 4.42 0 01-2.14-.6v.06c0 2.24 1.58 4.1 3.68 4.52a4.52 4.52 0 01-2.13.08c.6 1.92 2.34 3.31 4.4 3.35A9.06 9.06 0 012 19.56a12.78 12.78 0 006.92 2.05c8.3 0 12.84-7 12.84-13.08 0-.2 0-.39-.01-.59A9.22 9.22 0 0023 3z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <form class="p-8 space-y-6 bg-white rounded-lg shadow-md">
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded"
+                        required>
+                    <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded"
+                        required>
+                </div>
+                <input type="text" placeholder="Subject" class="w-full p-3 border border-gray-300 rounded" required>
+                <textarea placeholder="Your Message" rows="5" class="w-full p-3 border border-gray-300 rounded"
+                    required></textarea>
+
+                <button type="submit" class="px-6 py-3 text-white transition bg-blue-600 rounded hover:bg-blue-700">
+                    Send Message
+                </button>
+            </form>
+        </div>
+
+    </section>
+    <section id="faq" class="px-4 py-16 bg-gray-100 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="mb-10 text-3xl font-bold text-center text-gray-900">Frequently Asked Questions</h2>
+
+            <div class="space-y-4">
+                <div class="overflow-hidden border border-gray-300 rounded-xl">
+                    <button
+                        class="flex items-center justify-between w-full px-6 py-4 font-medium text-left text-gray-800 faq-toggle">
+                        <span>What services do you offer?</span>
+                        <svg class="w-5 h-5 transition-transform duration-200 transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="hidden px-6 pb-4 text-gray-600 faq-content">
+                        We offer web design, development, UI/UX services, and full-stack solutions customized for your
+                        needs.
+                    </div>
+                </div>
+
+                <div class="overflow-hidden border border-gray-300 rounded-xl">
+                    <button
+                        class="flex items-center justify-between w-full px-6 py-4 font-medium text-left text-gray-800 faq-toggle">
+                        <span>How can I get a quote?</span>
+                        <svg class="w-5 h-5 transition-transform duration-200 transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="hidden px-6 pb-4 text-gray-600 faq-content">
+                        You can contact us through the form below or email us directly with your project details.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="px-6 py-10 text-white bg-gray-900">
+        <div class="grid max-w-6xl grid-cols-1 gap-10 mx-auto md:grid-cols-3">
+
+            <div>
+                <h3 class="mb-2 text-xl font-bold">CodeCraft</h3>
+                <p class="text-sm text-gray-400">
+                    Empowering developers with modern web solutions. Reach out, connect, and grow with us.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="mb-3 font-semibold">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="#home" class="transition hover:text-white">Home</a></li>
+                    <li><a href="#about" class="transition hover:text-white">About</a></li>
+                    <li><a href="#services" class="transition hover:text-white">Services</a></li>
+                    <li><a href="#contact" class="transition hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="mb-3 font-semibold">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 transition hover:text-blue-500">
+
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12A10 10 0 1012 22v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2H15c-1 0-1.3.6-1.3 1.2V12h2.5l-.4 3H13v7a10 10 0 009-10z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 transition hover:text-pink-500">
+
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7.5 2C4.5 2 2 4.5 2 7.5v9C2 19.5 4.5 22 7.5 22h9c3 0 5.5-2.5 5.5-5.5v-9C22 4.5 19.5 2 16.5 2h-9zm0 2h9c1.9 0 3.5 1.6 3.5 3.5v9c0 1.9-1.6 3.5-3.5 3.5h-9C5.6 20 4 18.4 4 16.5v-9C4 5.6 5.6 4 7.5 4zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.75a.75.75 0 100 1.5.75.75 0 000-1.5z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 transition hover:text-blue-400">
+
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.4.36a9.32 9.32 0 01-2.88 1.1A4.52 4.52 0 0016.11 0c-2.6 0-4.71 2.13-4.71 4.76 0 .37.04.73.12 1.07A12.94 12.94 0 013 2.11a4.7 4.7 0 001.44 6.37 4.42 4.42 0 01-2.14-.6v.06c0 2.24 1.58 4.1 3.68 4.52a4.52 4.52 0 01-2.13.08c.6 1.92 2.34 3.31 4.4 3.35A9.06 9.06 0 012 19.56a12.78 12.78 0 006.92 2.05c8.3 0 12.84-7 12.84-13.08 0-.2 0-.39-.01-.59A9.22 9.22 0 0023 3z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 text-sm text-center text-gray-500">
+            &copy; 2025 CodeCraft. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
