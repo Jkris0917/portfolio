@@ -22,3 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     links.forEach(link => link.addEventListener('click', setActiveLink));
 });
+
+window.addEventListener('load', () => {
+    const loader = document.getElementById('page-loader');
+    if (loader) {
+        loader.style.opacity = '0';
+        loader.style.visibility = 'hidden';
+        loader.style.transition = 'opacity 0.4s ease';
+        setTimeout(() => loader.remove(), 500);
+    }
+});
+
